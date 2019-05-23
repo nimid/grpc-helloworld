@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package com.example;
+
+service HelloWorld {
+  rpc SayHelloWorld(google.protobuf.Empty) returns (Response);
+}
+
+message Response {
+  string message = 1;
+}
